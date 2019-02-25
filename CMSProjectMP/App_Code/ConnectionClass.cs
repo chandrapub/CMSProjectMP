@@ -22,7 +22,7 @@ namespace CMSProjectMP.App_Code
         public static ArrayList GetItemByType(string itemType)
         {
             ArrayList list = new ArrayList();
-            string query = string.Format("SELECT * FROM Item WHERE type ='Shirt'", itemType);
+            string query = string.Format("SELECT * FROM Item WHERE type Like '{0}'", itemType);
 
             try
             {
@@ -53,7 +53,8 @@ namespace CMSProjectMP.App_Code
         }
         public static void AddItem(Item item)
         {
-            string query = $"INSERT INTO Item(Name,Type,Price,Image,Description,SelectionId) values ('{item.name}', '{item.type}', {item.price}, '{item.image}','{item.description}', {item.selectionid})";
+
+            string query = $"INSERT INTO Item(Name,Type,Price,Description,Image,SelectionId) values ('{item.name}', '{item.type}', {item.price}, '{item.description}', '{item.image}', {item.selectionid})";
                 //item.name, item.type, item.price, item.image, item.description, item.selectionid);
             command.CommandText = query;
             command.Parameters.Add(new SqlParameter("price", item.price));

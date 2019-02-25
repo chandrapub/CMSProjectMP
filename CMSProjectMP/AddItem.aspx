@@ -5,16 +5,7 @@
 
     <h3>Add new Item</h3>
     <table cellspacing="15" class="itemTable">
-        <%--<tr>
-            <td style="width: 80px">
-                <b>ItemID:</b>
-            </td>
-            <td>
-                <asp:TextBox ID="txtItemId" runat="server" Width="300px"></asp:TextBox>
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
-                    ControlToValidate="txtName" ErrorMessage="*"></asp:RequiredFieldValidator>
-            </td>
-        </tr>--%>
+        
         <tr>
             <td style="width: 80px">
                 <b>Item Name:</b>

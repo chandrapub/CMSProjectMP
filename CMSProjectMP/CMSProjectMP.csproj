@@ -68,6 +68,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AddItem.aspx" />
+    <Content Include="App_Themes\AutumnTheme\StyleAutumn.css" />
+    <Content Include="App_Themes\SummerTheme\StyleSummer.css" />
+    <Content Include="App_Themes\WinterTheme\StyleWinter.css" />
     <Content Include="Autumn.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="Images\banner_org.jpg" />
@@ -76,24 +79,10 @@
     <Content Include="Images\coffee1.png" />
     <Content Include="Images\coffee2.png" />
     <Content Include="Images\coffee3.png" />
-    <Content Include="Images\Coffee\Cafe-Au-Lait.jpg" />
-    <Content Include="Images\Coffee\caffe_americano.jpg" />
-    <Content Include="Images\Coffee\irish coffee.jpg" />
-    <Content Include="Images\Coffee\ladies-sports-shoe.jpg" />
-    <Content Include="Images\Coffee\ladies-sports-wear.jpg" />
-    <Content Include="Images\Coffee\Men-jacket.jpg" />
-    <Content Include="Images\Coffee\Men-leather-jacket.jpg" />
-    <Content Include="Images\Coffee\mens-sports-dress-500x500.jpg" />
-    <Content Include="Images\Coffee\Tracksuit.jpg" />
-    <Content Include="Images\Coffee\white-chocolate-peppermint-mocha.jpg" />
-    <Content Include="Images\Coffee\Women-Cold-Jacket.jpg" />
-    <Content Include="Images\Coffee\Women-Designer-Jacket.jpg" />
-    <Content Include="Images\Coffee\Women-Jacket.jpg" />
     <Content Include="Images\Item\ladies-sports-shoe.jpg" />
     <Content Include="Images\Item\ladies-sports-wear.jpg" />
     <Content Include="Images\Item\Men-jacket.jpg" />
     <Content Include="Images\Item\Men-leather-jacket.jpg" />
-    <Content Include="Images\Item\mens-sports-dress-500x500.jpg" />
     <Content Include="Images\Item\Tracksuit.jpg" />
     <Content Include="Images\Item\Women-Cold-Jacket.jpg" />
     <Content Include="Images\Item\Women-Designer-Jacket.jpg" />
@@ -178,6 +167,9 @@
   <ItemGroup>
     <Content Include="MasterSite1.Master" />
     <Content Include="MasterPageAdmin.Master" />
+    <Content Include="App_Themes\SummerTheme\SkinSummer.skin" />
+    <Content Include="App_Themes\WinterTheme\SkinWinter.skin" />
+    <Content Include="App_Themes\AutumnTheme\SkinAutumn.skin" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -186,7 +178,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="App_Themes\Theme1\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

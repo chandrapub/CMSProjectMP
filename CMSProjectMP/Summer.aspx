@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterSite1.Master" AutoEventWireup="true" CodeBehind="Summer.aspx.cs" Inherits="CMSProjectMP.SummerPage" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterSite1.Master" AutoEventWireup="true" CodeBehind="Summer.aspx.cs" Inherits="CMSProjectMP.SummerPage" Theme="SummerTheme"%>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">

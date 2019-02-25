@@ -5,9 +5,14 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <p>
         Select a type:
-    <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="sds_type" DataTextField="type" DataValueField="type" AutoPostBack="True" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
+    <asp:DropDownList ID="DropDownList1" runat="server" 
+                      DataSourceID="sds_type" DataTextField="type" 
+                      DataValueField="type" AutoPostBack="True" 
+                      OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
     </asp:DropDownList>
-        <asp:SqlDataSource ID="sds_type" runat="server" ConnectionString="<%$ ConnectionStrings:SportsShopDBConnectionString %>" SelectCommand="SELECT [type] FROM [Item] ORDER BY [type]"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="sds_type" runat="server" 
+            ConnectionString="<%$ ConnectionStrings:SportsShopDBConnectionString %>" 
+            SelectCommand="SELECT [type] FROM [Item] ORDER BY [type]"></asp:SqlDataSource>
     </p>
     <p>
         <asp:Label ID="lblOutput" runat="server" Text="Label"></asp:Label>

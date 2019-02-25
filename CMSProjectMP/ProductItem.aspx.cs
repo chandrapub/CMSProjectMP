@@ -48,52 +48,38 @@ namespace CMSProjectMP
                 sb.Append(
                     string.Format(
 
-                     @"<table class='coffeeTable'>
+                     @"<table class='itemTable'>
                           <tr>
-                             <th width='50px'>id: </th>
-                             <td>{0}</td>
-                         </tr>
+                <th rowspan='6' width='150px'><img runat='server' src='{5}' /></th>
+                <th width='50px'>Name: </td>
+                <td>{1}</td>
+            </tr>
 
-                         <tr>
-                             <th width='50px'>Name: </th>
-                             <td>{1}</td>
-                         </tr>
-                         <tr>
-                             <th>Type: </th>
-                             <td>{2}</td>
-                         </tr>
+            <tr>
+                <th>Type: </th>
+                <td>{2}</td>
+            </tr>
 
-                         <tr>
-                             <th>Price: </th>
-                             <td>{3} $</td>
-                         </tr>
+            <tr>
+                <th>Price: </th>
+                <td>{3} $</td>
+            </tr>
 
-                         <tr>
-                             <th>Description: </th>
-                             <td>{4}</td>
-                         </tr>
+            <tr>
+                <th>Description: </th>
+                <td>{4}</td>
+            </tr>
 
-                         <tr>
-                             <th>SelectionId: </th>
-                             <td>{6}</td>
-                         </tr>
-
-                         <tr>
-                             <th rowspan='6' width='150px'>Image:</th>
-                             <td><img runat='server' src='{5}' /> </td>
-
-                         </tr>
-
-                         ////<tr>
-                         ////    <td colspan='2'>{6}</td>
-                         ////</tr>           
-
-                        </table>", item.id, item.name, item.type, item.price, item.description, item.image, item.selectionid));
+            <tr>
+                <th>SelectionId: </th>
+                <td>{6}</td>
+            </tr>
+             </table>", item.id, item.name, item.type, item.price, item.description, item.image, item.selectionid));
                 lblOutput.Text = sb.ToString();
 
             }
         }
-
+    
         protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
         {
             FillPage();

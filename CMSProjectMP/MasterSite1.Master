@@ -36,13 +36,13 @@
             <div id="navigation">
             <ul id="nav">
                 <li><a href ="~/Home.aspx" runat="server">Home</a></li>
-                <li><a href ="~/Summer.aspx" runat="server">Summer</a>
-                    <ul>
+                <li><a href ="~/ProductItem.aspx" runat="server">Product</a>
+                    <%--<ul>
                         <li><a href ="#">SummerShoe</a></li>
                         <li><a href ="#">SummerT-Shirt</a></li>
                         <li><a href ="#">SummerShorts</a></li>
                         <li><a href ="#">SummerSlippers</a></li>
-                    </ul>
+                    </ul>--%>
                 </li>
                 <li><a href ="~/Winter.aspx" runat="server">Winter</a>
                     <ul>
