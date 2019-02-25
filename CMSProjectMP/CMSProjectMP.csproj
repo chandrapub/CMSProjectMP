@@ -13,7 +13,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CMSProjectMP</RootNamespace>
     <AssemblyName>CMSProjectMP</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
     <IISExpressSSLPort />
@@ -23,6 +23,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -44,22 +45,21 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
@@ -67,12 +67,117 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Web.config" />
+    <Content Include="AddItem.aspx" />
+    <Content Include="Autumn.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="Images\banner_org.jpg" />
+    <Content Include="Images\bar_background.png" />
+    <Content Include="Images\bg2.jpg" />
+    <Content Include="Images\coffee1.png" />
+    <Content Include="Images\coffee2.png" />
+    <Content Include="Images\coffee3.png" />
+    <Content Include="Images\Coffee\Cafe-Au-Lait.jpg" />
+    <Content Include="Images\Coffee\caffe_americano.jpg" />
+    <Content Include="Images\Coffee\irish coffee.jpg" />
+    <Content Include="Images\Coffee\ladies-sports-shoe.jpg" />
+    <Content Include="Images\Coffee\ladies-sports-wear.jpg" />
+    <Content Include="Images\Coffee\Men-jacket.jpg" />
+    <Content Include="Images\Coffee\Men-leather-jacket.jpg" />
+    <Content Include="Images\Coffee\mens-sports-dress-500x500.jpg" />
+    <Content Include="Images\Coffee\Tracksuit.jpg" />
+    <Content Include="Images\Coffee\white-chocolate-peppermint-mocha.jpg" />
+    <Content Include="Images\Coffee\Women-Cold-Jacket.jpg" />
+    <Content Include="Images\Coffee\Women-Designer-Jacket.jpg" />
+    <Content Include="Images\Coffee\Women-Jacket.jpg" />
+    <Content Include="Images\Item\ladies-sports-shoe.jpg" />
+    <Content Include="Images\Item\ladies-sports-wear.jpg" />
+    <Content Include="Images\Item\Men-jacket.jpg" />
+    <Content Include="Images\Item\Men-leather-jacket.jpg" />
+    <Content Include="Images\Item\mens-sports-dress-500x500.jpg" />
+    <Content Include="Images\Item\Tracksuit.jpg" />
+    <Content Include="Images\Item\Women-Cold-Jacket.jpg" />
+    <Content Include="Images\Item\Women-Designer-Jacket.jpg" />
+    <Content Include="Images\Item\Women-Jacket.jpg" />
+    <Content Include="Images\Nav.jpg" />
+    <Content Include="ItemOverview.aspx" />
+    <Content Include="ProductItem.aspx" />
+    <Content Include="Styles\StyleMaster.css" />
+    <Content Include="Summer.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Winter.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddItem.aspx.cs">
+      <DependentUpon>AddItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddItem.aspx.designer.cs">
+      <DependentUpon>AddItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Autumn.aspx.cs">
+      <DependentUpon>Autumn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Autumn.aspx.designer.cs">
+      <DependentUpon>Autumn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ItemOverview.aspx.cs">
+      <DependentUpon>ItemOverview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ItemOverview.aspx.designer.cs">
+      <DependentUpon>ItemOverview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPageAdmin.Master.cs">
+      <DependentUpon>MasterPageAdmin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPageAdmin.Master.designer.cs">
+      <DependentUpon>MasterPageAdmin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ProductItem.aspx.cs">
+      <DependentUpon>ProductItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductItem.aspx.designer.cs">
+      <DependentUpon>ProductItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Summer.aspx.cs">
+      <DependentUpon>Summer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Summer.aspx.designer.cs">
+      <DependentUpon>Summer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Winter.aspx.cs">
+      <DependentUpon>Winter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Winter.aspx.designer.cs">
+      <DependentUpon>Winter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\ConnectionClass.cs" />
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterSite1.Master.cs">
+      <DependentUpon>MasterSite1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterSite1.Master.designer.cs">
+      <DependentUpon>MasterSite1.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="MasterSite1.Master" />
+    <Content Include="MasterPageAdmin.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -81,6 +186,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

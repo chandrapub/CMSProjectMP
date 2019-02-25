@@ -1,0 +1,95 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterSite1.master.cs" Inherits="CMSProjectMP.MasterSite1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Sports Wear Webshop</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript">
+        function mainmenu() {
+            $(" #nav ul ").css({ display: "none" }); // Opera Fix
+
+            $(" #nav li").hover(function () {
+                $(this).find('ul:first').css({ visibility: "visible", display: "none" }).show(400);
+            }
+            , function () {
+                $(this).find('ul:first').css({ visibility: "hidden" });
+            });
+        }
+        $(document).ready(function () {
+            mainmenu();
+        });
+    </script>
+    <link rel="stylesheet" type="text/css" href="~/Styles/StyleMaster.css"/>
+</head>
+<body>
+    
+    <form id="form1" runat="server">
+       
+        <div id="wrapper">
+            
+            <div id="banner">
+            </div>
+            <div id="navigation">
+            <ul id="nav">
+                <li><a href ="~/Home.aspx" runat="server">Home</a></li>
+                <li><a href ="~/Summer.aspx" runat="server">Summer</a>
+                    <ul>
+                        <li><a href ="#">SummerShoe</a></li>
+                        <li><a href ="#">SummerT-Shirt</a></li>
+                        <li><a href ="#">SummerShorts</a></li>
+                        <li><a href ="#">SummerSlippers</a></li>
+                    </ul>
+                </li>
+                <li><a href ="~/Winter.aspx" runat="server">Winter</a>
+                    <ul>
+                        <li><a href ="#">WinterShoe</a></li>
+                        <li><a href ="#">WinterJacket</a></li>
+                        <li><a href ="#">WinterSweater</a></li>
+                        <li><a href ="#">WinterBlazer</a></li>
+                    </ul>
+                </li>
+                <li><a href ="~/Autumn.aspx" runat="server">Autumn</a>
+                    <ul>
+                        <li><a href ="#">AutumnShoe</a></li>
+                        <li><a href ="#">AutumnJacket</a></li>
+                        <li><a href ="#">AutumnSwater</a></li>
+                        <li><a href ="#">AutumnBlazer</a></li>
+                    </ul>
+                </li>
+                <li><a id ="A1" href="~/ItemOverview.aspx" runat="server">Manipulate Data</a></li>
+
+            </ul>
+            </div>
+            <div id="content_area">
+
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                </asp:ContentPlaceHolder>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                </asp:ContentPlaceHolder>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder4" runat="server">
+                </asp:ContentPlaceHolder>
+
+
+            </div>
+
+            <!-- <div id="sidebar">
+
+            </div> -->
+
+        
+        <div id="footer">
+                <%--<p>Assignment for: Development Environment</p>--%>
+                <p>Content Management Systems</p>
+                <p>Contact information: <a href="mailto:contact@wbgroup.com">contact@wdgroup.com</a>.</p>
+       </div>
+      </div>
+    </form>
+</body>
+</html>
